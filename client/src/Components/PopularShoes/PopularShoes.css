@@ -1,0 +1,148 @@
+
+
+
+.popular-shoe-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially positioned below */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth fade-in and move up */
+  }
+  
+  .popular-shoe-container.animated {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+  }
+  
+  .popular-shoe-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .popular-shoe-wrapper h3 {
+    color: grey;
+    font-size: 1.5rem;
+  }
+  
+  .popular-shoe-wrapper-two {
+    display: flex;
+    max-width: 1500px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  
+  .popular-shoe-wrapper-two p {
+    background: #24d22d;
+    color: white;
+    padding: 0.5em;
+  }
+  
+  .popular-shoe-wrapper-three {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1400px;
+    gap: 90px;
+  }
+  
+  .popular-shoe-wrapper-three img {
+    width: 344px;
+    object-fit: contain;
+    cursor: pointer;
+    mix-blend-mode: multiply;
+    background: transparent;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width:420px) {
+
+    √
+
+    .popular-shoe-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        opacity: 0; /* Initially hidden */
+        transform: translateY(20px); /* Initially positioned below */
+        transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth fade-in and move up */
+      }
+      
+      .popular-shoe-container.animated {
+        opacity: 1; /* Fade in */
+        transform: translateY(0); /* Move to original position */
+      }
+      
+      .popular-shoe-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1000px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      
+      .popular-shoe-wrapper h3 {
+        color: grey;
+        font-size: 1rem;
+      }
+      
+      .popular-shoe-wrapper-two {
+        display: flex;
+        max-width: 1500px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        text-align: center;
+
+      }
+      
+      .popular-shoe-wrapper-two p {
+        background: #24d22d;
+        color: white;
+        padding: 0.5em;
+        font-size: 0.8rem;
+        text-align: center;
+
+      }
+      
+      .popular-shoe-wrapper-three {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1400px;
+        text-align: center;
+        gap: 50px;
+      }
+      
+      .popular-shoe-wrapper-three img {
+        width: 150px;
+        object-fit: contain;
+        cursor: pointer;
+        mix-blend-mode: multiply;
+        background: transparent;
+      }
+    
+  }

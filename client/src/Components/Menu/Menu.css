@@ -1,0 +1,133 @@
+
+
+
+
+
+
+
+.navbar-menu-container {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Hidden off-screen initially */
+    width: 30%;
+    height: 100vh;
+    background-color: wheat;
+    z-index: 1000;
+    display: block;
+    transition: left 0.5s ease-in-out; /* Smooth slide-in transition */
+    overflow-y: auto; 
+  }
+  
+/* Slide-in effect when the menu is open */
+  .navbar-menu-container.open {
+    left: 0; 
+  }
+
+
+
+.navbar-menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push elements properly */
+  height: 100%; /* Ensures full height */
+}
+
+
+
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+
+  .close-btn button {
+    border: none;
+    outline: none;
+    color: red;
+    font-size: 2rem;
+    background: none;
+    cursor: pointer;
+  }
+
+
+  .close-btn button:hover {
+    color:black
+  }
+  
+
+  .navbar-menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+  }
+
+
+
+
+  .navbar-menu-wrapper .navbar-link {
+    font-size: 2rem;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+  .navbar-link:hover{
+    color:darkseagreen
+  }
+
+
+  .navbar-menu-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin:0 auto;
+    width: 100%;
+  }
+  
+  .navbar-menu-icon-wrapper img {
+    width: 99px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+
+
+
+
+
+
+  
+
+
+  @media screen and (max-width:420px) {
+
+    .navbar-menu-container {
+      width: 30%; /* Full screen width on mobile */
+      overflow-y: hidden; /* Prevents scrolling */
+    }
+  
+    .navbar-menu-wrapper {
+      height: 100vh; /* Makes sure everything is visible */
+      justify-content: center; /* Centers items properly */
+    }
+  
+    .navbar-menu-wrapper .navbar-link {
+      font-size: 1rem; /* Slightly reduce size for mobile fit */
+    }
+  
+    .navbar-menu-icon-wrapper img {
+      width: 39px; /* Adjust icon size for better mobile layout */
+    }
+
+
+
+}

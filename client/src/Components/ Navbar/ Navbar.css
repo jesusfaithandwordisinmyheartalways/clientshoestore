@@ -1,0 +1,514 @@
+
+
+
+
+
+
+
+
+.navbar-container {
+    width:100%;
+    overflow: hidden;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: opacity 2s ease-in-out, transform 1s ease-in-out; 
+    z-index: 1000;
+}
+
+
+.navbar-container.show {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+
+
+
+
+
+.left-side-image img {
+    width: 45px;
+    object-fit: contain;
+    mix-blend-mode:multiply;
+    cursor: pointer;
+
+}
+
+
+
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:0 auto;
+    width: 100%;
+    text-align: center;
+    background:rgba(245, 245, 245, 0.98)
+}
+
+
+
+
+.navbar-wrapper-right {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    width: 210px;
+
+}
+
+
+
+.navbar-wrapper-right img {
+    width: 28px;
+    object-fit: contain;
+    cursor: pointer;
+    mix-blend-mode:multiply
+}
+
+
+
+.login-header {
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-align: center;
+    position: relative;
+    left: 60px;
+    color:navy;
+    font-family:'Times New Roman', Times, serif
+}
+
+
+
+
+
+
+
+
+
+
+ /*------TOOLTIP--------*/
+
+
+
+
+ .tooltip {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px 3px;
+    font-size: 14px;
+    border-radius: 5px;
+    white-space: nowrap;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+.tooltip.visible {
+    display: block;
+}
+
+/* Ensure the navbar-wrapper-right links are positioned correctly */
+.navbar-wrapper-right a {
+    position: relative;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* Sticky Navbar */
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure sticky navbar stays behind the sidebar */
+    transition: top 0.3s ease-in-out;
+}
+
+/* Hide navbar when scrolling down */
+.hidden {
+    top: -100px;
+    transition: top 0.3s ease-in-out;
+}
+
+/* Show navbar when scrolling up */
+.visible {
+    top: 0;
+    transition: top 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .navbar-wrapper {
+    background-color: white;
+}
+
+.dark-mode .login-header {
+    color: black;
+}
+
+.dark-mode .tooltip {
+    background-color: white;
+    color: black;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.icon {
+    color: black; /* Default color */
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color:green;
+    cursor: pointer;
+  }
+
+
+  
+  .icon.logged-in {
+    color: darkgreen;
+  }
+
+
+
+  
+  /* Dark mode styles */
+  .dark-mode .icon {
+    color: white;
+  }
+
+
+
+
+  .cart-count {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: relative;
+    top:-10px;
+    left: -28px;
+    margin:0 auto;
+  }
+
+
+  .cart-count span {
+    color:seagreen
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media  screen and (max-width: 420px)  {
+
+
+
+
+.navbar-container {
+    width:100%;
+    overflow: hidden;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: opacity 2s ease-in-out, transform 1s ease-in-out; 
+    z-index: 1000;
+}
+
+
+.navbar-container.show {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+
+
+
+
+
+.left-side-image img {
+    width: 45px;
+    object-fit: contain;
+    mix-blend-mode:multiply;
+    cursor: pointer;
+
+}
+
+
+
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:0 auto;
+    width: 100%;
+    text-align: center;
+    background:rgba(245, 245, 245, 0.98)
+}
+
+
+
+
+.navbar-wrapper-right {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 30%;
+
+}
+
+
+
+.navbar-wrapper-right img {
+    width: 8px;
+    object-fit: contain;
+    cursor: pointer;
+    mix-blend-mode:multiply
+}
+
+
+
+.login-header {
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    left: 30px;
+    color:navy;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+
+
+
+ /*------TOOLTIP--------*/
+
+
+
+
+ .tooltip {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px 3px;
+    font-size: 14px;
+    border-radius: 5px;
+    white-space: nowrap;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+.tooltip.visible {
+    display: block;
+}
+
+/* Ensure the navbar-wrapper-right links are positioned correctly */
+.navbar-wrapper-right a {
+    position: relative;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* Sticky Navbar */
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure sticky navbar stays behind the sidebar */
+    transition: top 0.3s ease-in-out;
+}
+
+/* Hide navbar when scrolling down */
+.hidden {
+    top: -100px;
+    transition: top 0.3s ease-in-out;
+}
+
+/* Show navbar when scrolling up */
+.visible {
+    top: 0;
+    transition: top 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .navbar-wrapper {
+    background-color: white;
+}
+
+.dark-mode .login-header {
+    color: black;
+}
+
+.dark-mode .tooltip {
+    background-color: white;
+    color: black;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.icon {
+    color: black; /* Default color */
+    transition: color 0.3s ease;
+    width: 14px;
+  }
+  
+  .icon:hover {
+    color:green;
+    cursor: pointer;
+  }
+
+
+  
+  .icon.logged-in {
+    color: darkgreen;
+  }
+
+
+
+  
+  /* Dark mode styles */
+  .dark-mode .icon {
+    color: white;
+  }
+
+
+
+
+  .cart-count {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    text-align: center;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: relative;
+    top:-10px;
+    left: -20px;
+    margin:0 auto;
+  }
+
+
+  .cart-count span {
+    color:seagreen
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }

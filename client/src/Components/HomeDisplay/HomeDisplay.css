@@ -1,0 +1,136 @@
+
+
+
+
+.home-display-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially positioned below */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth fade-in and move up */
+  }
+  
+  .home-display-container.animated {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+  }
+  
+  .home-display-wrapper {
+    display: flex;
+    max-width: 1500px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+
+  }
+
+
+
+
+  
+  .home-display-wrapper p {
+    background: burlywood;
+    color: white;
+    padding: 0.5em;
+  }
+  
+  .home-display-shoe-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1400px;
+    gap: 90px;
+  }
+  
+  .home-display-shoe-wrapper img {
+    width: 344px;
+    object-fit: contain;
+    cursor: pointer;
+    mix-blend-mode: multiply;
+    background: transparent;
+  }
+
+
+
+
+
+
+
+
+  @media screen and (max-width:420px) {
+
+
+
+
+.home-display-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initially positioned below */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth fade-in and move up */
+}
+
+.home-display-container.animated {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to original position */
+}
+
+.home-display-wrapper {
+  display: flex;
+  max-width: 1500px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  text-align: center;
+
+}
+
+
+
+
+
+.home-display-wrapper p {
+  background: burlywood;
+  color: white;
+  padding: 0.5em;
+  text-align: center;
+
+}
+
+
+
+
+.home-display-shoe-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: auto;
+  gap: 9px;
+  text-align: center;
+
+}
+
+
+
+
+.home-display-shoe-wrapper img {
+  width: 180px;
+  object-fit: contain;
+  cursor: pointer;
+  mix-blend-mode: multiply;
+  background: transparent;
+  text-align: center;
+
+}
+
+
+
+
+  }

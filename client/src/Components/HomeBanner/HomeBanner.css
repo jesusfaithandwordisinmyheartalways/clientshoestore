@@ -1,0 +1,210 @@
+
+
+
+
+
+
+
+.home-banner-container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially positioned below */
+    transition: opacity 1s ease, transform 1s ease; /* Smooth fade-in and move up */
+  }
+  
+  .home-banner-container.animated {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+  }
+  
+  .home-banner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .Home-banner-image {
+    background-image: url('../Images/banner_image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    height: 710px;
+    width: 50%;
+  }
+  
+  .Home-banner-image-two {
+    background-image: url('../Images/gir_banner.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    height: 710px;
+    width: 50%;
+  }
+  
+  /* New animation effect */
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: scale3d(9, 1, 1) translateX(-10vw);
+      box-shadow: var(--bigShadow);
+    }
+    40% {
+      box-shadow: none;
+      transform: scale3d(1, 1, 1) translateX(0);
+    }
+    45% {
+      opacity: 1;
+      transform: scale3d(0.35, 1.8, 1);
+    }
+    75% {
+      box-shadow: none;
+      transform: scale3d(0.35, 1.8, 1);
+    }
+    80% {
+      box-shadow: var(--shadow);
+      transform: scale3d(1.1, 1, 1);
+    }
+    85% {
+      transform: scale3d(1.4, 1, 1);
+    }
+    100% {
+      box-shadow: none;
+    }
+  }
+  
+  :root {
+    --shadowSize: 25px;
+    --shadow: var(--shadowSize) var(--shadowSize) 0 2px rgba(255, 0, 0, 0.3),
+      calc(var(--shadowSize) * -1) calc(var(--shadowSize) * -1) 0 2px
+        rgba(0, 255, 0, 0.33);
+    --bigShadow: calc(var(--shadowSize) * 2) calc(var(--shadowSize) * 2) 0 2px
+        rgba(255, 0, 0, 0.5),
+      calc((var(--shadowSize) * 2) * -1) calc((var(--shadowSize) * 2) * -1) 0 2px
+        rgba(0, 255, 0, 0.5);
+  }
+  
+  /* Apply animation when triggered */
+  .home-banner-container.animated {
+    animation: appear 1s ease-out; /* Custom animation */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width:420px) {
+
+
+.home-banner-container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initially positioned below */
+  transition: opacity 1s ease, transform 1s ease; /* Smooth fade-in and move up */
+}
+
+.home-banner-container.animated {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to original position */
+}
+
+.home-banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.Home-banner-image {
+  background-image: url('../Images/banner_image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  height: 710px;
+  width: 350px;
+
+}
+
+.Home-banner-image-two {
+  background-image: url('../Images/gir_banner.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  height: 710px;
+  width: 350px;
+}
+
+/* New animation effect */
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale3d(9, 1, 1) translateX(-10vw);
+    box-shadow: var(--bigShadow);
+  }
+  40% {
+    box-shadow: none;
+    transform: scale3d(1, 1, 1) translateX(0);
+  }
+  45% {
+    opacity: 1;
+    transform: scale3d(0.35, 1.8, 1);
+  }
+  75% {
+    box-shadow: none;
+    transform: scale3d(0.35, 1.8, 1);
+  }
+  80% {
+    box-shadow: var(--shadow);
+    transform: scale3d(1.1, 1, 1);
+  }
+  85% {
+    transform: scale3d(1.4, 1, 1);
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+
+:root {
+  --shadowSize: 25px;
+  --shadow: var(--shadowSize) var(--shadowSize) 0 2px rgba(255, 0, 0, 0.3),
+    calc(var(--shadowSize) * -1) calc(var(--shadowSize) * -1) 0 2px
+      rgba(0, 255, 0, 0.33);
+  --bigShadow: calc(var(--shadowSize) * 2) calc(var(--shadowSize) * 2) 0 2px
+      rgba(255, 0, 0, 0.5),
+    calc((var(--shadowSize) * 2) * -1) calc((var(--shadowSize) * 2) * -1) 0 2px
+      rgba(0, 255, 0, 0.5);
+}
+
+/* Apply animation when triggered */
+.home-banner-container.animated {
+  animation: appear 1s ease-out; /* Custom animation */
+}
+
+
+
+
+
+
+
+
+  }

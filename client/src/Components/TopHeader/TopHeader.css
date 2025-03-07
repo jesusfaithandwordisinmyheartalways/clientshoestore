@@ -1,0 +1,91 @@
+
+
+
+
+
+
+.TopHeader-Container {
+    width:100%;
+    overflow: hidden;
+    background: darkgreen;
+}
+
+
+
+.TopHeader-Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 1000px;
+    text-align: center;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; 
+
+}
+
+
+.TopHeader-Wrapper.show {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+
+.TopHeader-Wrapper h3 {
+    color:white
+} 
+
+
+
+
+
+
+
+
+@media  screen and (max-width: 420px) {
+
+
+
+.TopHeader-Container {
+    width:100%;
+    overflow: hidden;
+    background: darkgreen;
+}
+
+
+
+.TopHeader-Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 1000px;
+    text-align: center;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; 
+    font-size: 0.7rem;
+
+}
+
+
+.TopHeader-Wrapper.show {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+
+.TopHeader-Wrapper h3 {
+    color:white
+} 
+
+
+
+
+
+}

@@ -1,0 +1,151 @@
+
+
+
+
+
+
+
+
+
+
+.search-input-container {
+    width: 100%;
+    overflow: hidden;
+    background:whitesmoke;
+    margin: 0 auto;
+    transition: opacity 0.3s ease-in-out;
+
+   
+
+    
+}
+
+
+
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+
+.search-input-wrapper input{
+    text-align: center;
+    font-size: 0.9rem;
+    color: black;
+    font-family: "Oak", "Maple", "Pine", "Sycamore", "Willow";
+    border-radius: 10px;
+    width: 510px;
+    padding:0.8em
+}
+
+
+
+
+
+.input-user {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.search-icon {
+    position: relative;
+    top:4px;
+    left: -45px;
+}
+
+
+.image-two {
+    position: relative;
+    top:0px;
+    left: 0px;
+    cursor: pointer;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:420px) {
+
+
+.search-input-container {
+    width: 100%;
+    overflow: hidden;
+    background:whitesmoke;
+    margin: 0 auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+
+.search-input-wrapper input{
+    text-align: center;
+    font-size: 0.7rem;
+    color: black;
+    font-family: "Oak", "Maple", "Pine", "Sycamore", "Willow";
+    border-radius: 10px;
+    width: 510px;
+    padding:0.5em
+}
+
+
+
+
+
+.input-user {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.search-icon {
+    position: relative;
+    top:4px;
+    left: -115px;
+}
+
+
+.image-two {
+    position: relative;
+    top:0px;
+    left: -90px;
+    cursor: pointer;
+  
+}
+
+
+
+
+
+
+
+}

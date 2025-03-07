@@ -1,0 +1,279 @@
+
+
+
+
+
+
+
+.footer-container h4 {
+    color:white
+
+}
+
+.footer-container {
+    width: 100%;
+    overflow: hidden;
+    background:black;
+    position: relative;
+    bottom:0px;
+    margin-top: 50px;
+
+
+}
+
+
+.footer-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 1400px;
+    font-size: 1.9rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+   
+}
+
+
+
+.footer-wrapper p {
+    color:white
+}
+
+
+
+
+.footer-wrapper-two {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 1400px;
+    font-size: 1.9rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+
+.footer-wrapper-two span {
+    color:white;
+    cursor: pointer;
+
+}
+
+
+.footer-wrapper-two span:hover {
+    color:green
+}
+
+
+
+
+
+
+
+
+
+
+.footer-wrapper-three {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 1500px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+
+.footer-wrapper-three button {
+    border:none;
+    outline: none;
+    background: none;
+    padding:0.8em;
+    color:rgb(79, 151, 222);
+    font-size: 1rem;
+}
+
+
+
+.reach-out-footer p {
+    width: 170px;
+}
+
+
+.footer-wrapper-three p {
+    color:whitesmoke
+}
+
+
+
+
+.copyright-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 1000px;
+}
+
+
+.copyright-wrapper span {
+    color:white;
+    font-size: 0.9rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:420px) {
+
+
+
+    .footer-container h4 {
+        color:white;
+        font-size: 0.8rem;
+    
+    }
+    
+    .footer-container {
+        width: 100%;
+        overflow: hidden;
+        background:black;
+        position: relative;
+        bottom:0px;
+        margin-top: 50px;
+    
+    
+    }
+    
+    
+    .footer-wrapper {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+        margin: 0 auto;
+        max-width: 1400px;
+        font-size: 1.9rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+       
+    }
+    
+    
+    
+    .footer-wrapper p {
+        color:white;
+        font-size: 1rem;
+    }
+    
+    
+    
+    
+    .footer-wrapper-two {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+        margin: 0 auto;
+        max-width: 1400px;
+        font-size: 1rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       
+    }
+    
+    
+    .footer-wrapper-two span {
+        color:white;
+        cursor: pointer;
+        
+    
+    }
+    
+    
+    .footer-wrapper-two span:hover {
+        color:green
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .footer-wrapper-three {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        max-width: 1500px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       
+    }
+    
+    
+    .footer-wrapper-three button {
+        border:none;
+        outline: none;
+        background: none;
+        padding:0.8em;
+        color:rgb(79, 151, 222);
+        font-size: 0.7rem;
+    }
+    
+
+    .footer-wrapper-three h4 {
+        font-size: 0.7rem;
+        font-family:'Times New Roman', Times, serif
+
+    }
+    
+    
+    .reach-out-footer p {
+        width: 170px;
+    }
+    
+    
+    .footer-wrapper-three p {
+        color:whitesmoke
+    }
+    
+    
+    
+    
+    .copyright-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:0 auto;
+        max-width: 1000px;
+    }
+    
+    
+    .copyright-wrapper span {
+        color:white;
+        font-size: 0.6rem;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    
+    
+    
+    
+    
+
+    
+}

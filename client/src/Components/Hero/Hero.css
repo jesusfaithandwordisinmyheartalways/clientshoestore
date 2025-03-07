@@ -1,0 +1,87 @@
+
+
+
+
+
+
+
+.hero-container {
+    width: 100%;
+    overflow: hidden;
+    z-index: -99;
+    
+
+
+
+}
+
+
+.hero-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    margin:0 auto;
+    z-index: -99;
+
+}
+
+
+
+
+
+.hero-image {
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:420px) {
+
+
+    .hero-container {
+        width: 100%;
+        overflow: hidden;
+        z-index: -99;
+        
+    
+    
+    
+    }
+    
+    
+    .hero-wrapper {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 100%;
+        margin:0 auto;
+        z-index: -99;
+    
+    }
+    
+    
+    
+    
+    
+    .hero-image {
+        width: 100vw;
+        height: 610px;
+        object-fit: cover;
+    }
+    
+    
+    
+
+
+    
+}
