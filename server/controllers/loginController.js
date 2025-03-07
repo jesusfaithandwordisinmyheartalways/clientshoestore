@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import bcrypt from 'bcrypt'
 import LoginUser from '../models/loginModel.js';
 import RegisterUser from '../models/registerModel.js';
+import express from 'express';
 
 
 
