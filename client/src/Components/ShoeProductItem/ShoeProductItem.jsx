@@ -36,7 +36,7 @@ const ShoeProductItem = ({ _id, name, description, image, hoverImage, oldprice, 
         <div className={'shoe-product-item-container'}>
 
             <div className={'shoe-product-wrapper'}>
-            <Link to={`/product/${_id}/${name}/${description}`} onClick={() => window.scrollTo(0,0)} >
+            <Link to={`/product/${_id}`} onClick={() => window.scrollTo(0,0)} >
               <div><img alt={name} onMouseOver={() => setImageIsHovered(true)}
                onMouseOut={() => setImageIsHovered(false)}  src={imageIsHovered && hoverImage ? hoverImage : displayImage}  >
                </img></div>

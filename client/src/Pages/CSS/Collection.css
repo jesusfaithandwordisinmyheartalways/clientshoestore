@@ -141,14 +141,36 @@
 
 
 .middle-wrapper p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
-.middle-wrapper span {
-    font-size: 0.7rem;
+.middle-wrapper span:not(.old-price) {
+    font-size: 0.8rem;
     text-align: center;
+    color:darkgreen
    
     
+}
+
+
+span.old-price {
+    text-decoration: line-through;
+    color:black;
+    font-size: 0.7rem;
+}
+
+.collection-price {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:25px
+}
+
+
+
+
+.collection-link {
+    text-decoration: none;
 }
 
 

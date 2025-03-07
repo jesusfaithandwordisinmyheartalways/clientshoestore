@@ -6,6 +6,7 @@ import './CSS/Collection.css'
 import { products } from '../Components/Arraydata/shoesdata'
 import ShoeProductItem from '../Components/ShoeProductItem/ShoeProductItem'
 import { ShoeStoreContext } from '../Context/ShoeDataProvider'
+import { Link } from "react-router-dom";
 
 
 
@@ -190,19 +191,18 @@ if (sortType === 'low-high') {
 
 
       <div className='middle-wrapper'>
-            {filteredProducts.map((data) => {
-                return (
-                  <div><ShoeProductItem key={data._id} 
-                  id={data._id}
-                  name={data.name} 
-                  description={data.description}
-                  oldprice={data.oldprice}
-                  price={data.price}
-                  image={data.image[0]}
-                  hoverImage={data.hoverImage}
-                      /></div>
-                )
-            })}
+      {filteredProducts.map((product) => (
+          <div key={product._id} className='product-card'>
+            <Link to={`/product/${product._id}`} className='collection-link'>
+              <img src={product.image[0]} alt={product.name} />
+              <div><p>{product.name}</p></div>
+                <div className='collection-price'>
+                  <div>$<span className='old-price'>{product.oldprice.toFixed(2)}</span></div>
+                   <div><span>${product.price.toFixed(2)}</span></div>
+                </div>
+            </Link>
+          </div>
+        ))}
 
       </div>
 

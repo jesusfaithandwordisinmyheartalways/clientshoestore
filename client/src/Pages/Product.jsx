@@ -12,7 +12,7 @@ import Reviews from '../Components/Reviews/Reviews.jsx';
 
 
 const Product = () => {
-  const {productId, productName, productDescription} = useParams()
+  const { productId } = useParams()
   const [productData, setProductData] = useState(null);
   const [image, setImage] = useState('');
   const [size, setSize] = useState('');
@@ -73,17 +73,15 @@ const Product = () => {
           console.error('Error: productId is missing!');
           return;
         }
-    
-        const productFound = products.find((data) => String(data._id, data.name, data.description) === String(productId));
+      
+        const productFound = products.find((data) => String(data._id) === String(productId));
         if (productFound) {
-          console.log('Found product:', productFound);
           setProductData(productFound);
           setImage(Array.isArray(productFound.image) ? productFound.image[0] : productFound.image);
         } else {
           console.error('Product not found');
         }
-      }, [productId, productName, productDescription]);
-
+      }, [productId]);
 
 
 
@@ -228,6 +226,10 @@ const Product = () => {
 
   )
 }
+
+
+
+
 
 
 
