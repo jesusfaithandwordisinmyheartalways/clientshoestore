@@ -110,7 +110,7 @@ app.post('/logout/exit', (req, res) => {
 
 
 
-const PORT = 'https://clientshoestoreserver.onrender.com';
+const PORT = process.env.PORT || 'https://clientshoestoreserver.onrender.com';
 app.listen(PORT, () => {
     console.log(`Server is on port ${PORT}`);
 });
