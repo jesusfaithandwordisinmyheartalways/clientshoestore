@@ -82,6 +82,7 @@ Stripe Payment Features
  SCREENSHOTS:
  ![Screenshot 2025-03-07 at 16-34-37 React App](https://github.com/user-attachments/assets/4a652a69-05ee-4073-814e-9bb45fbc38f4)
 
+![Mobile screenshot](https://github.com/user-attachments/assets/ba245960-b94a-4562-b248-73556365385d)
 
 
 
