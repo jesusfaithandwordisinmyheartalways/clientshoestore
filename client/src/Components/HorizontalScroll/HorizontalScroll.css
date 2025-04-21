@@ -1,0 +1,76 @@
+
+
+
+
+.HorizontalScroll-Container {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    background-color: white;
+    animation: shadowPulse 4s ease-in-out infinite alternate;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* default for light mode */
+  }
+  
+
+
+  /* Dark mode box shadow override */
+  @media (prefers-color-scheme: dark) {
+    .HorizontalScroll-Container {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+  }
+  
+  .HorizontalScroll-Wrapper {
+    display: flex;
+    gap: 110px;
+    width: fit-content;
+    animation: scrollHorizontal 30s linear infinite;
+  }
+
+
+  
+.HorizontalScroll-Wrapper img {
+  width: 510px;
+  object-fit: contain;
+  background: none;
+  mix-blend-mode: lighten;
+  filter: brightness(1.1) contrast(1.4) saturate(0.8);
+  transition: transform 0.3s ease-in-out;
+}
+
+  .HorizontalScroll-Wrapper img:hover {
+    transform: scale(1.05);
+  }
+
+
+
+  /* Infinite horizontal scroll */
+  @keyframes scrollHorizontal {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+
+
+
+  /* Advanced animated shadow effect */
+  @keyframes shadowPulse {
+    0% {
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  /* Optional: smoother image transition if they load in */
+  .HorizontalScroll-Wrapper img {
+    transition: transform 0.3s ease-in-out;
+  }
