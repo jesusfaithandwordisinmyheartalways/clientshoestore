@@ -79,11 +79,24 @@ Stripe Payment Features
 
 
 
+
  SCREENSHOTS:
+
+
+
+
+
+ 
 
 Full page
 
 ![Full page](https://github.com/user-attachments/assets/f4b10979-bf9d-4ac2-b3ae-b719b0e2eb62)
+
+
+
+
+
+
 
 
  
@@ -95,8 +108,18 @@ Dark toggle Page
 
 
 
+
+
+
+
  Cart Page
  ![Cart page](https://github.com/user-attachments/assets/4b5930ab-195a-499d-8bfe-831523628d4f)
+
+
+
+
+
+
 
 
 
@@ -107,13 +130,26 @@ Dark toggle Product Page
 
 
 
+
+
+
+
+
+
+
+
 Purchase Page
 ![Purchase page](https://github.com/user-attachments/assets/d9e8f380-26c2-40d5-90d0-dc14c01e4f0b)
 
 
 
 
-![Mobile screenshot](https://github.com/user-attachments/assets/ba245960-b94a-4562-b248-73556365385d)
+
+
+Mobile Page
+
+![mobile](https://github.com/user-attachments/assets/0948d48c-4d90-48c9-bef4-0e8b782aad75)
+
 
 
 
