@@ -90,8 +90,28 @@ Stripe Payment Features
 
 Full page
 
+
+
+
+
 ![Full page](https://github.com/user-attachments/assets/f4b10979-bf9d-4ac2-b3ae-b719b0e2eb62)
 
+
+
+
+
+
+
+Side Menu:
+
+
+
+
+
+
+
+
+![sidemenu image](https://github.com/user-attachments/assets/539519c4-3c9a-45e6-ac21-3ee89009acb0)
 
 
 
@@ -103,6 +123,12 @@ Full page
 
 Dark toggle Page
 
+
+
+
+
+
+
 ![Dark toggle](https://github.com/user-attachments/assets/94a8e6ac-547c-4a54-89ad-cd7c72c64dfc)
 
 
@@ -112,7 +138,19 @@ Dark toggle Page
 
 
 
+
+
+
+
+
  Cart Page
+
+
+
+
+
+
+ 
  ![Cart page](https://github.com/user-attachments/assets/4b5930ab-195a-499d-8bfe-831523628d4f)
 
 
@@ -124,7 +162,18 @@ Dark toggle Page
 
 
 
-Dark toggle Product Page
+
+
+
+
+Dark toggle Product Page:
+
+
+
+
+
+
+
 ![Dark toggle product page](https://github.com/user-attachments/assets/9b2a66c7-9e17-4c52-9b6e-fa28e2a4d23a)
 
 
@@ -138,7 +187,16 @@ Dark toggle Product Page
 
 
 
-Purchase Page
+
+
+
+
+Purchase Page:
+
+
+
+
+
 ![Purchase page](https://github.com/user-attachments/assets/d9e8f380-26c2-40d5-90d0-dc14c01e4f0b)
 
 
@@ -146,9 +204,35 @@ Purchase Page
 
 
 
-Mobile Page
+
+
+
+
+
+
+
+
+
+
+
+Mobile Page:
+
+
+
+
 
 ![mobile](https://github.com/user-attachments/assets/0948d48c-4d90-48c9-bef4-0e8b782aad75)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
