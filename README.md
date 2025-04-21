@@ -39,7 +39,7 @@ Security Features:
 Functionality Overview of Client:
 
 General App Features
-	•	User Authentication
+	•	User Authentication | Dark Toggle
 	•	Fetches authentication status on app load.
 	•	If authenticated, displays AuthNavbar, otherwise Navbar.
 	•	Logs out the user and navigates back to the home page.
@@ -80,7 +80,38 @@ Stripe Payment Features
 
 
  SCREENSHOTS:
- ![Screenshot 2025-03-07 at 16-34-37 React App](https://github.com/user-attachments/assets/4a652a69-05ee-4073-814e-9bb45fbc38f4)
+
+Full page
+
+![Full page](https://github.com/user-attachments/assets/f4b10979-bf9d-4ac2-b3ae-b719b0e2eb62)
+
+
+ 
+
+Dark toggle Page
+
+![Dark toggle](https://github.com/user-attachments/assets/94a8e6ac-547c-4a54-89ad-cd7c72c64dfc)
+
+
+
+
+ Cart Page
+ ![Cart page](https://github.com/user-attachments/assets/4b5930ab-195a-499d-8bfe-831523628d4f)
+
+
+
+
+Dark toggle Product Page
+![Dark toggle product page](https://github.com/user-attachments/assets/9b2a66c7-9e17-4c52-9b6e-fa28e2a4d23a)
+
+
+
+
+Purchase Page
+![Purchase page](https://github.com/user-attachments/assets/d9e8f380-26c2-40d5-90d0-dc14c01e4f0b)
+
+
+
 
 ![Mobile screenshot](https://github.com/user-attachments/assets/ba245960-b94a-4562-b248-73556365385d)
 
