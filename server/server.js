@@ -22,6 +22,7 @@ import connectMongoDB from './configuration/mongodb.js'
 
 
 dotenv.config();
+console.log("Stripe Secret Key:", process.env.STRIPE_SECRET_KEY); // TEMP DEBUG LINE
 
 
 
@@ -31,7 +32,7 @@ app.use(cookieParser());
 
 app.use(cors({
     credentials: true,
-    origin: 'https://clientshoestoreclient.onrender.com'
+    origin: 'http://localhost:3000'
 }))
 app.use(helmet());
 
@@ -110,7 +111,7 @@ app.post('/logout/exit', (req, res) => {
 
 
 
-const PORT = process.env.PORT || 'https://clientshoestoreserver.onrender.com';
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log(`Server is on port ${PORT}`);
 });

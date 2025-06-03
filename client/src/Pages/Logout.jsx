@@ -21,7 +21,7 @@ const Logout = ({ onLogout}) => {
         e.preventDefault(); 
 
         try {
-             const response = await fetch('https://clientshoestoreserver.onrender.com/logout/exit', {
+             const response = await fetch('http://localhost:3001/logout/exit', {
                 method: 'POST',
                 credentials: 'include',  
              });
