@@ -2,22 +2,17 @@
 
 
 
+
+
+// authRoute.js
 import express from 'express';
-import userAuth from '../middleware/userAuth.js'
+import userAuth from '../middleware/userAuth.js';
 
+const router = express.Router();
 
-
-const router = express.Router()
-
-
-// Protected route to check authentication status
 router.get('/authentication', userAuth, (req, res) => {
-    res.json({ authenticated: true, user: { name: req.user.name } });
-  });
-
-
-
-
-
+  const { name, firstName } = req.user;
+  res.json({ authenticated: true, user: { name, firstName } });
+});
 
 export default router;

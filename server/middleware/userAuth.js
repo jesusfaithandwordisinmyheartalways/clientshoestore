@@ -4,9 +4,7 @@
 
 
 import jwt from 'jsonwebtoken';
-import RegisterUser from '../models/registerModel.js'
-
-
+import RegisterUser from '../models/registerModel.js';
 
 const userAuth = async (req, res, next) => {
   const token = req.cookies.authToken;
@@ -16,16 +14,15 @@ const userAuth = async (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    // Here, fetch user from the database (if necessary)
-    const user = await RegisterUser.findById(decoded.id); // Make sure user is fetched from the database
-    res.json({ authenticated: true, user: { name: user.name, firstName: user.firstName } }); // Send user info
+    const user = await RegisterUser.findById(decoded.id);
+    if (!user) throw new Error("User not found");
+
+    req.user = user; // Attach user info to req object
+    next(); // Pass control to next middleware or route handler
   } catch (error) {
     console.error("Token verification failed:", error);
     return res.status(403).json({ authenticated: false });
   }
 };
 
-
-
-
-export default userAuth;
+export default userAuth;  

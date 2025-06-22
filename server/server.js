@@ -32,7 +32,7 @@ app.use(cookieParser());
 
 app.use(cors({
     credentials: true,
-    origin: 'http://localhost:3000'
+    origin: 'https://clientshoestoreclient.onrender.com'
 }))
 app.use(helmet());
 
@@ -112,6 +112,8 @@ app.post('/logout/exit', (req, res) => {
 
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => {
     console.log(`Server is on port ${PORT}`);
-});
+  });
+}

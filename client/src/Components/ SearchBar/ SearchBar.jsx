@@ -44,8 +44,14 @@ const SearchBar = () => {
             <div className={'search-input-wrapper'}>
 
                 <div className='input-user'>
-                    <div><input value={search} onChange={(e) =>  setSearch(e.target.value)} placeholder='Search Men, Women, Kid, Adult Shoes' ></input></div>
+                    <div>
+                        <input value={search} onChange={(e) =>  setSearch(e.target.value)}
+                         placeholder='Search Men, Women, Kid, Adult Shoes' ></input>
+                         </div>
+
                     <div><Search size={28} className='search-icon' /></div>
+
+
 
                     <div className={'image-two'} onClick={() => setShowSearch(false)}>
                        <div ><X size={24} color="black" /></div>

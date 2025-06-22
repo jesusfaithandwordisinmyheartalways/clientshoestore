@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     const checkAuthStatus = async () => {
       try {
-        const response = await fetch("http://localhost:3001/auth/authentication", {
+        const response = await fetch("https://clientshoestoreserver.onrender.com/auth/authentication", {
           credentials: "include", // Ensures cookies are sent
         });
 

@@ -81,7 +81,7 @@ const  Navbar = () => {
         <div className={`navbar-container ${navbarTransition ? "show" : ""} ${stickyNavbar ? "sticky-navbar" : ""}`}>
           <div className="navbar-wrapper">
             <div onClick={toggleMenu} className="left-side-image">
-              <MenuIcon size={31} className="icon" />
+              <MenuIcon size={31} className="icon"  />
             </div>
 
             <Link to="/" className="login-header">
@@ -89,17 +89,17 @@ const  Navbar = () => {
             </Link>
 
             <div className="navbar-wrapper-right">
-              <div onClick={() => { setShowSearch(true); navigate("/collection"); }}>
-                <Search size={31} className="icon" />
+              <div onClick={() => { setShowSearch(true); navigate("/collection"); }} >
+                <Search size={31} className="icon"  />
               </div>
 
-              <Link to="/login" onMouseEnter={() => setHoveredLink("login")} onMouseLeave={() => setHoveredLink(null)}>
-                <User  size={31} className="icon"/>
+              <Link to="/login" onMouseEnter={() => setHoveredLink("login")} onMouseLeave={() => setHoveredLink(null)} >
+                <User  size={31} className="icon" />
                 <span className={`tooltip ${hoveredLink === "login" ? "visible" : ""}`}>Login</span>
               </Link>
 
-              <Link to="/cart" onMouseEnter={() => setHoveredLink("cart")} onMouseLeave={() => setHoveredLink(null)}>
-                <ShoppingCart size={31} className="icon" />
+              <Link to="/cart" onMouseEnter={() => setHoveredLink("cart")} onMouseLeave={() => setHoveredLink(null)} data-testid="cart-icon">
+                <ShoppingCart size={31} className="icon"  />
                 <span className={`tooltip ${hoveredLink === "cart" ? "visible" : ""}`}>Cart</span>
               </Link>
 
